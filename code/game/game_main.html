@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Untitled Goose Game</title>
+	<link rel="icon" type="image/x-icon" href="./img/favicon.png">
+	<link rel="stylesheet" href="./spritegame.css">
+	<script src="./gameScript.js" defer></script>
+	<script src="./script2.js" defer></script>
+</head>
+
+<body onload="printPlayer()">
+	<audio id="sound" src="soundtrack.mp3"></audio>
+	<audio id="honkSound" src="honk-sound.mp3"></audio>
+	<audio id="walk1" src="./walk1.wav"></audio>
+	<audio id="grab" src="./grab.mp3"></audio>
+
+	<header class="bounce-in-top">
+		<div onclick="document.getElementById('sound').play()" class="sound">Play Sound</div>
+		<img src="./img/headerImg.png" alt="headerImg" id="headerImg">
+		<div onclick="document.getElementById('sound').pause()" class="sound">Stop Sound</div>
+	</header>
+	<div class="grid">
+
+		<div id="dashboard" class="bounce-in-top">
+			<div id="playerNameOutput"></div>
+			<button id="startButton" onclick="startGame(), genItems()">Play</button>
+			<p style="text-align: center;">SCORE</p>
+			<div id="counter">0</div>
+			<div id="leaderBord">
+			</div>
+		</div>
+
+		<div id="surface">
+			<div id="item"></div>
+			<div id="timer"></div>
+			<img id="honk" src="./img/honk.png" alt="honk">
+			<div id="player">
+				<img id="spriteImg" src="./img/sprite.png" alt="sprite">
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

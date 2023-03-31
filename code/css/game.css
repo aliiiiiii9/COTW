@@ -1,0 +1,14 @@
+
+
+
+#surface{
+    width: 70vw;
+    height: 39.5vw;
+    background-image: url('../img/game/background.jpg');
+    background-size: contain;
+}
+.duck{
+    width: 10vw;
+    position: absolute;
+    
+}

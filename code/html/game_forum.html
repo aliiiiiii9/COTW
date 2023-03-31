@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Forum</title>
+    <link rel="stylesheet" href="../css/game.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/game.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <img src="../img/Backgrounds/10.jpg" alt="Background_1" id="bannerImage">
+        </div>
+        <div id="stickyHeader">
+            <h1 id="headerText">Jagdspiel</h1>
+            <a href="../html/index.html"><img src="../img/home.png" alt="" id="headerHome"></a>
+            <img src="../img/logo.jpg" alt="logo" id="headerImage">
+        </div>
+    </header>
+    <div id="home_input">
+        <input type="text" id="input_name" placeholder="Spielername" class="bounce-in-top">
+        <input id="leaderbordLink" type="submit" value="Spiel starten" onclick="setNameAndStart()" class="bounce-in-top">
+        <div id="message"></div>
+    </div>
+    <p>Ziele, schieße und triff!</p>
+</body>
+</html>

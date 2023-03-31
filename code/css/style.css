@@ -1,0 +1,121 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../css/Roboto-Light.ttf');
+}
+html{
+    scroll-behavior: smooth;
+}
+:root {
+    --sage: rgb(163, 177, 138);
+    --ferngreen: rgb(88, 129, 87);
+    --chamoise: rgb(169, 132, 103);
+    --timberwolf: rgb(218, 215, 205);
+}
+a{
+    cursor: pointer;
+}
+h2{
+    font-size: 4vw;
+}
+body {
+    background: var(--sage);
+    background: linear-gradient(180deg, var(--sage) 0%, var(--ferngreen) 100%);
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: #DAD7CD;
+
+}
+
+#headerText {
+    margin: 0;
+    font-size: 3.5vw;
+}
+
+#stickyHeader {
+    display: grid;
+    position: sticky;
+    grid-template-columns: auto 5% 5%;
+    margin: 0.5vw;
+    margin-top: 0.2vw;
+    padding-bottom: 0.5vw;
+    align-items: center;
+}
+
+#headerImage {
+    width: 5vw;
+    /*margin-left: auto;*/
+}
+
+#headerHome {
+    margin-left: auto;
+    width: 5vw;
+}
+
+#bannerImage {
+    width: 100vw;
+}
+
+/*
+* Weapons and Items
+*/
+#navWeapons {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+.weaponsLink {
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+.weapons{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vw;
+    text-align: center;
+    align-items: center;
+}
+.weaponsLink:hover {
+    box-shadow: 0px 0px 5px 5px rgb(0, 0, 0);
+    transition: all 0.5s;
+}
+.weaponCard{
+    background-color: rgb(0, 0, 0);
+    width: 15vw;
+    color: orange;
+    margin-left: auto;
+    margin-right: auto;
+}
+.weaponImg{
+    width: 12vw;
+    margin-top: 2vw;
+    background-color: orange;
+}
+.weaponHeader{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    color: antiquewhite;
+}
+#upToTop{
+    position: sticky;
+    top: 90vh;
+    left: 95vw;
+    width: 5vw;
+    height: 5vw;
+    background-image: url('../img/up1.png');
+    background-size: cover;
+    transition: all 1s;
+}
+#upToTop:hover{
+    background-image: url('../img/up2.png');
+    transition: all 1s;
+}

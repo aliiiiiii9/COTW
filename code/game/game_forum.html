@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Untitled Goose Game</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="./spritegame.css">
+    <script src="./gameScript.js" defer></script>
+    <script src="./timer.js" defer></script>
+</head>
+
+<body>
+    <div id="homeHeader" class="bounce-in-top">
+        <img src="./img/headerImg.png" alt="Header" id="homeImg">
+    </div>
+    <img src="./img/goose.webp" alt="goose" style="position: absolute;">
+
+    <div id="home_input">
+        <input type="text" id="input_name" placeholder="playername" class="bounce-in-top">
+        <input id="leaderbordLink" type="submit" value="Start game" onclick="setNameAndStart()" class="bounce-in-top">
+        <div id="message" class="bounce-in-top"></div>
+    </div>
+    <div id="surface"></div>
+</body>
+
+</html>
