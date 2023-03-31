@@ -3,7 +3,13 @@ let rifleBox = document.getElementById('boxRifles')
 let shotgunBox = document.getElementById('boxShotguns')
 let bowBox = document.getElementById('boxBows')
 let boxSights = document.getElementById('boxSights')
-
+let images = {
+    "0":"../img/Backgrounds/2.jpg",
+    "1":"../img/Backgrounds/4.jpg",
+    "2":"../img/Backgrounds/6.jpg",
+    "3":"../img/Backgrounds/7.jpg",
+    "4":"../img/Backgrounds/8.jpg",
+}
 /* Functions which are loaded on the page onload */
 genWeapons()
 genSights()
@@ -97,3 +103,4 @@ function genSights(){
         `
     }
 }
+
