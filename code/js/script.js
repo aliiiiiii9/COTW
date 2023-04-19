@@ -3,16 +3,16 @@ let rifleBox = document.getElementById('boxRifles')
 let shotgunBox = document.getElementById('boxShotguns')
 let bowBox = document.getElementById('boxBows')
 let boxSights = document.getElementById('boxSights')
+let dlcBox = document.getElementById('dlc_box')
 let images = {
-    "0":"../img/Backgrounds/2.jpg",
-    "1":"../img/Backgrounds/4.jpg",
-    "2":"../img/Backgrounds/6.jpg",
-    "3":"../img/Backgrounds/7.jpg",
-    "4":"../img/Backgrounds/8.jpg",
+    "0": "../img/Backgrounds/2.jpg",
+    "1": "../img/Backgrounds/4.jpg",
+    "2": "../img/Backgrounds/6.jpg",
+    "3": "../img/Backgrounds/7.jpg",
+    "4": "../img/Backgrounds/8.jpg",
 }
 /* Functions which are loaded on the page onload */
-genWeapons()
-genSights()
+
 function genWeapons() {
     for (let i = 0; i < weapons.pistols.length; i++) {
         pistolBox.innerHTML += `
@@ -86,8 +86,8 @@ function genWeapons() {
         `
     }
 }
-function genSights(){
-    for(let i = 0; i < sights.sights.length; i++){
+function genSights() {
+    for (let i = 0; i < sights.sights.length; i++) {
         boxSights.innerHTML += `
         <div class='weaponCard'>
             <img class='weaponImg' src="${sights.sights[i].image}" alt="focoso">
@@ -104,3 +104,31 @@ function genSights(){
     }
 }
 
+function genDlcs() {
+    for (let i = 0; i < dlcs.dlcs.length; i++) {
+        console.log(dlcs.dlcs[i].name)
+        if(i%2==0){
+            dlcBox.innerHTML += `
+            <div class="dlcGrid1">
+                <img class="dlcImg" src="../img/dlcs/hightechhunting.webp" alt="">
+                <div>
+                    <h2 class="dlcName">${dlcs.dlcs[i].name}</h2>
+                    <p class="dlcText">${dlcs.dlcs[i].text}</p>
+                </div>
+            </div>
+        `
+        }else{
+            dlcBox.innerHTML += `
+            <div class="dlcGrid2">
+                <div>
+                    <h2 class="dlcName">${dlcs.dlcs[i].name}</h2>
+                    <p class="dlcText">${dlcs.dlcs[i].text}</p>
+                </div>
+                <img class="dlcImg" src="../img/dlcs/hightechhunting.webp" alt="">
+            </div>
+        `
+        }
+                
+        
+    }
+}

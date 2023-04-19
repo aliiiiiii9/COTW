@@ -154,3 +154,219 @@ header {
     transform: scale(1.1); 
     transition: all 0.4s;
 }
+/*
+ *  Hunting Reserves
+*/
+
+#reserve img{
+    width: 100vw;
+}
+#laytonLakeLink{
+    position: absolute;
+    top: 117%;
+    left: 12%;
+    width: 7.5vw;
+    height: 17vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+#laytonLakeLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#hirschfeldenLink{
+    position: absolute;
+    top: 118%;
+    left: 51%;
+    width: 8vw;
+    height: 18vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+}
+#hirschfeldenLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#yukonValleyLink{
+    position: absolute;
+    top: 98%;
+    left: 3%;
+    width: 9vw;
+    height: 19vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#yukonValleyLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#newEnglandLink{
+    position: absolute;
+    top: 120%;
+    left: 26%;
+    width: 10vw;
+    height: 13vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#newEnglandLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#silverRidgePeaksLink{
+    position: absolute;
+    top: 128.5%;
+    left: 17%;
+    width: 6.8vw;
+    height: 14.2vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#silverRidgePeaksLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#mississippiLink{
+    position: absolute;
+    top: 130%;
+    left: 22.8%;
+    width: 8vw;
+    height: 20vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#mississippiLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#ranchoDelArroyoLink{
+    position: absolute;
+    top: 146%;
+    left: 19.5%;
+    width: 6.8vw;
+    height: 14.2vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#ranchoDelArroyoLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#parqueFernandoLink{
+    position: absolute;
+    top: 162.2%;
+    left: 28.5%;
+    width: 7.5vw;
+    height: 18vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#parqueFernandoLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#medvedTaigaLink{
+    position: absolute;
+    top: 98%;
+    left: 73%;
+    width: 9vw;
+    height: 19vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#medvedTaigaLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#cuatroColinasLink{
+    position: absolute;
+    top: 128%;
+    left: 45%;
+    width: 7.1vw;
+    height: 13vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#cuatroColinasLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#yurhongaSavanneLink{
+    position: absolute;
+    top: 165%;
+    left: 52.2%;
+    width: 9vw;
+    height: 18vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#yurhongaSavanneLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#teAwaroaLink{
+    position: absolute;
+    top: 184%;
+    left: 91%;
+    width: 8.1vw;
+    height: 18vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#teAwaroaLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+#revontuliCoastLink{
+    position: absolute;
+    top: 104%;
+    left: 53%;
+    width: 8vw;
+    height: 17vh;
+    border-radius: 100%;
+    transition: all 0.5s;
+
+}
+#revontuliCoastLink:hover{
+    background-color: rgba(255, 102, 0, 0.22);
+    transition: all 0.5s;
+}
+/*
+ *  DLCs
+*/
+.dlcGrid1{
+    display: grid;
+    grid-template-columns: 25% 70%;
+    grid-gap: 5%;
+    margin-top: 5vh;
+}
+.dlcGrid2{
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-gap: 5%;
+    margin-top: 5vh;
+}
+.dlcName{
+    margin: auto;
+    padding: 0;
+    font-size: 3em;
+}
+.dlcImg{
+    width: 25vw;
+    margin-left: auto;
+}
+#dlc_box{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+}
