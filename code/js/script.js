@@ -106,11 +106,10 @@ function genSights() {
 
 function genDlcs() {
     for (let i = 0; i < dlcs.dlcs.length; i++) {
-        console.log(dlcs.dlcs[i].name)
         if(i%2==0){
             dlcBox.innerHTML += `
             <div class="dlcGrid1">
-                <img class="dlcImg" src="../img/dlcs/hightechhunting.webp" alt="">
+                <img class="dlcImg" src="${dlcs.dlcs[i].image}" alt="">
                 <div>
                     <h2 class="dlcName">${dlcs.dlcs[i].name}</h2>
                     <p class="dlcText">${dlcs.dlcs[i].text}</p>
@@ -124,7 +123,7 @@ function genDlcs() {
                     <h2 class="dlcName">${dlcs.dlcs[i].name}</h2>
                     <p class="dlcText">${dlcs.dlcs[i].text}</p>
                 </div>
-                <img class="dlcImg" src="../img/dlcs/hightechhunting.webp" alt="">
+                <img class="dlcImg" src="${dlcs.dlcs[i].image}" alt="">
             </div>
         `
         }
