@@ -53,12 +53,12 @@ let dlcs = {
         {
             "name": "Waffenpacket 1",
             "text": "Die Wildhüter Connie, Doc und Alena haben eine Lieferung brandneuer Waffen erhalten - das halbautomatische Gewehr Virant .22LR, die Crosspoint CB-165 und den Recurvebogen Houyi Recurve Bow.",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/weapon1.jpg"
         },
         {
             "name": "Waffenpacket 2",
             "text": "Eine brandneue Waffenlieferung wurde gerade an unsere Aufseher geliefert, und sie freuen sich, mit der Grelck Drilling Gun, dem Solokhin MN1890 und dem Mangiafico 410 / 45 Colt Revolver eine unglaubliche Kombination aus neuer Weltfinesse und Old-School-Zuverlässigkeit zu präsentieren .",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/weapon2.jpg"
         },
         {
             "name": "Waffenpacket 3",
@@ -68,32 +68,32 @@ let dlcs = {
         {
             "name": "Saseka Safari Trophäenhütte",
             "text": "Biete deinen Trophäen jetzt eine angemessene Präsentation. Das luxuriöse und exotische Design der Saseka Safari ist perfekt, um deine Einzel- und Multi-Trophäen-Halterungen oder deine liebsten Waffen auf Gewehrständern zu präsentieren.",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/sasekaTrophy.jpg"
         },
         {
             "name": "Spring Creek Manor Trophäenhütte",
             "text": "Jeder erfahrene Jäger besitzt eine umfangreiche Trophäensammlung, die auf angemessene Art und Weise präsentiert werden sollte. Spring Creek Manor ist als Jagdschloss ideal dafür geeignet, Ihre kostbaren Trophäen in rustikalem Stil zu präsentieren.",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/springCreekTrophy.jpg"
         },
         {
             "name": "Bluthund",
             "text": "Erlebe eine geschickte neue Jagdweise mit einem Bloodhound an deiner Seite. Dieser vierbeinige Begleiter hat einen unglaublichen Geruchssinn und kann Gerüche auch über große Entfernungen aufspüren.",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/bloodhound.jpg"
         },
         {
             "name": "Hirschfelden Veteran Kosmetik-Packet",
             "text": "Schmücke deine Waffensammlung mit diesen einzigartigen Skins, die vom Jagdrevier Hirschfelden inspiriert sind.",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/hirschfeldenCosmetic.jpg"
         },
         {
             "name": "New England Veteran Kosmetik-Packet",
             "text": "Schmücke deine Waffensammlung mit diesen einzigartigen Skins, die vom Jagdrevier New England Mountains inspiriert sind. Beim Inhalt dieses Packs handelt es sich um rein dekorative Anpassungen, die auf alle Waffen im Spiel anwendbar sind.",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/newEnglandCosmetic.jpg"
         },
         {
             "name": "New England Scout-Kosmetikpaket",
             "text": "Schmücke deine Waffensammlung mit diesen einzigartigen Skins, die vom Jagdrevier Hirschfelden inspiriert sind.",
-            "image": "../img/dlcs/"
+            "image": "../img/dlcs/newEnglandScoutCosmetic.jpg"
         }
     ]
     

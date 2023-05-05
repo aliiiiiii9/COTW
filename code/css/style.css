@@ -158,12 +158,13 @@ header {
  *  Hunting Reserves
 */
 
-#reserve img{
+
+#reserveImage{
     width: 100vw;
 }
 #laytonLakeLink{
     position: absolute;
-    top: 117%;
+    top: 112%;
     left: 12%;
     width: 7.5vw;
     height: 17vh;
@@ -176,7 +177,7 @@ header {
 }
 #hirschfeldenLink{
     position: absolute;
-    top: 118%;
+    top: 113%;
     left: 51%;
     width: 8vw;
     height: 18vh;
@@ -217,7 +218,7 @@ header {
 }
 #silverRidgePeaksLink{
     position: absolute;
-    top: 128.5%;
+    top: 123.5%;
     left: 17%;
     width: 6.8vw;
     height: 14.2vh;
@@ -231,7 +232,7 @@ header {
 }
 #mississippiLink{
     position: absolute;
-    top: 130%;
+    top: 125%;
     left: 22.8%;
     width: 8vw;
     height: 20vh;
@@ -245,7 +246,7 @@ header {
 }
 #ranchoDelArroyoLink{
     position: absolute;
-    top: 146%;
+    top: 141%;
     left: 19.5%;
     width: 6.8vw;
     height: 14.2vh;
@@ -259,7 +260,7 @@ header {
 }
 #parqueFernandoLink{
     position: absolute;
-    top: 162.2%;
+    top: 157.2%;
     left: 28.5%;
     width: 7.5vw;
     height: 18vh;
@@ -273,7 +274,7 @@ header {
 }
 #medvedTaigaLink{
     position: absolute;
-    top: 98%;
+    top: 93%;
     left: 73%;
     width: 9vw;
     height: 19vh;
@@ -287,7 +288,7 @@ header {
 }
 #cuatroColinasLink{
     position: absolute;
-    top: 128%;
+    top: 123%;
     left: 45%;
     width: 7.1vw;
     height: 13vh;
@@ -301,7 +302,7 @@ header {
 }
 #yurhongaSavanneLink{
     position: absolute;
-    top: 165%;
+    top: 160%;
     left: 52.2%;
     width: 9vw;
     height: 18vh;
@@ -315,7 +316,7 @@ header {
 }
 #teAwaroaLink{
     position: absolute;
-    top: 184%;
+    top: 179%;
     left: 91%;
     width: 8.1vw;
     height: 18vh;
@@ -329,7 +330,7 @@ header {
 }
 #revontuliCoastLink{
     position: absolute;
-    top: 104%;
+    top: 99%;
     left: 53%;
     width: 8vw;
     height: 17vh;
@@ -364,9 +365,15 @@ header {
 .dlcImg{
     width: 25vw;
     margin-left: auto;
+    transition: all 0.2s;
+}
+.dlcImg:hover{    
+    transform: scale(1.1); 
+    transition: all 0.2s ease-out;
 }
 #dlc_box{
     width: 90vw;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5vh;
 }

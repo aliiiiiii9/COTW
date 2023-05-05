@@ -4,14 +4,8 @@ let shotgunBox = document.getElementById('boxShotguns')
 let bowBox = document.getElementById('boxBows')
 let boxSights = document.getElementById('boxSights')
 let dlcBox = document.getElementById('dlc_box')
-let images = {
-    "0": "../img/Backgrounds/2.jpg",
-    "1": "../img/Backgrounds/4.jpg",
-    "2": "../img/Backgrounds/6.jpg",
-    "3": "../img/Backgrounds/7.jpg",
-    "4": "../img/Backgrounds/8.jpg",
-}
-/* Functions which are loaded on the page onload */
+
+
 
 function genWeapons() {
     for (let i = 0; i < weapons.pistols.length; i++) {
@@ -103,10 +97,30 @@ function genSights() {
         `
     }
 }
-
+function genItems() {
+    for (let i = 0; i < items.items.length; i++) {
+        boxItems.innerHTML += `
+        <div class='weaponCard'>
+            <img class='weaponImg' src="${items.items[i].image}" alt="focoso">
+            <h3>${items.items[i].name}</h3>
+            <div class="grid">
+                <p>Stärke:</p>
+                <p>${items.items[i].strength}</p>
+                <p>Dauer:</p>
+                <p>${items.items[i].duration}</p>
+                <p>Reichweite:</p>
+                <p>${items.items[i].range}</p>
+                <p>Preis:</p>
+                <p>${items.items[i].Price}</p>
+            </div>
+        </div>
+        
+        `
+    }
+}
 function genDlcs() {
     for (let i = 0; i < dlcs.dlcs.length; i++) {
-        if(i%2==0){
+        if (i % 2 == 0) {
             dlcBox.innerHTML += `
             <div class="dlcGrid1">
                 <img class="dlcImg" src="${dlcs.dlcs[i].image}" alt="">
@@ -116,7 +130,7 @@ function genDlcs() {
                 </div>
             </div>
         `
-        }else{
+        } else {
             dlcBox.innerHTML += `
             <div class="dlcGrid2">
                 <div>
@@ -127,7 +141,33 @@ function genDlcs() {
             </div>
         `
         }
-                
+
+
+    }
+}
+function getParamReserve(value) {
+    let inputUrl = new URL(window.location)
+    console.log(window.location)
+    let inputParams = new URLSearchParams(inputUrl.search)
+    inputParams.append('reserve', `${value}`);
+    let reserve = new URL(window.location.toLocaleString()).searchParams.get('reserve')
+
+    console.log(inputParams.get('reserve'));
+    setParam(inputParams.get('reserve'))
+}
+function setParam(reserve) {
+    window.open(`./reserve.html?=${reserve}`, "_self");
+}
+
+function getParamToGenerate(){
+    let reserve = "" + new URLSearchParams(window.location.search).get('') + ""
+    console.log(reserve);
+
+    
+    for (let i = 0; i < reserves.reserve; i++) {
+        console.log(reserves.reserve);
+        
         
     }
+    document.getElementById('headerText').innerHTML = reserve
 }

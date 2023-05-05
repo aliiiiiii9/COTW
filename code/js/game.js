@@ -13,7 +13,7 @@ function setNameAndStart() {
         window.open("./game_main.html", "_self")
     }
     else{
-        document.getElementById('message').innerHTML = `<p>Bitte einen Namen eingeben</p>`
+        document.getElementById('message').style.color = "rgb(0,0,0)"
     }
 }
 function startGame() {

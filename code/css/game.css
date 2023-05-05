@@ -1,14 +1,7 @@
 
-
-
-#surface{
-    width: 70vw;
-    height: 39.5vw;
-    background-image: url('../img/game/background.jpg');
-    background-size: contain;
+#home_input{
+    text-align: center;
 }
-.duck{
-    width: 10vw;
-    position: absolute;
-    
+#message{
+    color: rgba(0, 0, 0, 0);
 }

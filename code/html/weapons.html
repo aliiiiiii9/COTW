@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="../css/cardsWeapons.css">
     <script src="../js/weapons.js" defer></script>
     <script src="../js/sights.js" defer></script>
+    <script src="../js/items.js" defer></script>
     <script src="../js/script.js" defer></script>
-
+    <script>
+        
+        window.onload = function () {
+            console.log('Dokument geladen');
+            genWeapons()
+            genSights()
+            genItems()
+        } 
+        
+    </script>
 </head>
 
 <body>
@@ -46,7 +56,8 @@
     <div id="boxBows" class="weapons"></div>
     <h2 id="sights" class="weaponHeader">Visiere</h2>
     <div id="boxSights" class="weapons"></div>
-    
+    <h2 id="items" class="weaponHeader">Items</h2>
+    <div id="boxItems" class="weapons"></div>
 
 </body>
 
