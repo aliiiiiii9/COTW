@@ -4,7 +4,7 @@ let shotgunBox = document.getElementById('boxShotguns')
 let bowBox = document.getElementById('boxBows')
 let boxSights = document.getElementById('boxSights')
 let dlcBox = document.getElementById('dlc_box')
-
+let reserve_box = document.getElementById('reserve_box')
 
 
 function genWeapons() {
@@ -152,22 +152,23 @@ function getParamReserve(value) {
     inputParams.append('reserve', `${value}`);
     let reserve = new URL(window.location.toLocaleString()).searchParams.get('reserve')
 
-    console.log(inputParams.get('reserve'));
+    console.log(inputParams.get('reserve'))
     setParam(inputParams.get('reserve'))
 }
 function setParam(reserve) {
-    window.open(`./reserve.html?=${reserve}`, "_self");
+    window.open(`./reserve.html?=${reserve}`, "_self")
 }
 
 function getParamToGenerate(){
     let reserve = "" + new URLSearchParams(window.location.search).get('') + ""
-    console.log(reserve);
+    let s = `reserves.${reserve}`
+    let final_reserve = eval(s)
+    // HEADER TEXT
+    document.getElementById('headerText').innerHTML = final_reserve.name
 
-    
-    for (let i = 0; i < reserves.reserve; i++) {
-        console.log(reserves.reserve);
-        
-        
+    for (let i = 0; i < final_reserve.animals.length; i++) {
+        reserve_box.innerHTML += `<p>${final_reserve.animals[i]}</p>`
     }
-    document.getElementById('headerText').innerHTML = reserve
+    
+
 }
