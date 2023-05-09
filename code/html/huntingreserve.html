@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jagdreviere</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/reserves.js"></script>
     <script src="../js/script.js" defer></script>
+
 </head>
 
 <body>
@@ -21,20 +23,33 @@
             <img src="../img/logo.jpg" alt="logo" id="headerImage">
         </div>
         <div id="reserve">
-            <img id="reserveImage" src="../img/theHunter_ Call of the Wild 19.03.2023 13_10_40.jpg" alt="">
-            <div onclick="getParamReserve('laytonlake')" id="laytonLakeLink"></div>
-            <div onclick="getParamReserve('hirschfelden')" id="hirschfeldenLink"></div>
-            <div onclick="getParamReserve('yukonvalley')" id="yukonValleyLink"></div>
-            <div onclick="getParamReserve('newengland')" id="newEnglandLink"></div>
-            <div onclick="getParamReserve('silverridgepeaks')" id="silverRidgePeaksLink"></div>
-            <div onclick="getParamReserve('mississippi')" id="mississippiLink"></div>
-            <div onclick="getParamReserve('ranchodelarroyo')" id="ranchoDelArroyoLink"></div>
-            <div onclick="getParamReserve('parquefernando')" id="parqueFernandoLink"></div>
-            <div onclick="getParamReserve('medvedtaiga')" id="medvedTaigaLink"></div>
-            <div onclick="getParamReserve('cuatrocolinas')" id="cuatroColinasLink"></div>
-            <div onclick="getParamReserve('vurhongasavanne')" id="yurhongaSavanneLink"></div>
-            <div onclick="getParamReserve('teawaroa')" id="teAwaroaLink"></div>
-            <div onclick="getParamReserve('revontulicoast')" id="revontuliCoastLink"></div>
+            <div id="reserve_link_img"><img id="reserveImage" src="../img/reserves/link_card.jpg" alt=""></div>
+            <div onclick="getParamReserve('laytonlake')" onmouseover="changeReserveImg('laytonlake')"
+                onmouseout="setReserveImgBack()" id="laytonLakeLink"></div>
+            <div onclick="getParamReserve('hirschfelden')" onmouseover="changeReserveImg('hirschfelden')"
+                onmouseout="setReserveImgBack()" id="hirschfeldenLink"></div>
+            <div onclick="getParamReserve('yukonvalley')" onmouseover="changeReserveImg('yukonvalley')"
+                onmouseout="setReserveImgBack()" id="yukonValleyLink"></div>
+            <div onclick="getParamReserve('newengland')" onmouseover="changeReserveImg('newengland')"
+                onmouseout="setReserveImgBack()" id="newEnglandLink"></div>
+            <div onclick="getParamReserve('silverridgepeaks')" onmouseover="changeReserveImg('silverridge')"
+                onmouseout="setReserveImgBack()" id="silverRidgePeaksLink"></div>
+            <div onclick="getParamReserve('mississippi')" onmouseover="changeReserveImg('mississippi')"
+                onmouseout="setReserveImgBack()" id="mississippiLink"></div>
+            <div onclick="getParamReserve('ranchodelarroyo')" onmouseover="changeReserveImg('ranchodelarroyo')"
+                onmouseout="setReserveImgBack()" id="ranchoDelArroyoLink"></div>
+            <div onclick="getParamReserve('parquefernando')" onmouseover="changeReserveImg('parquefernando')"
+                onmouseout="setReserveImgBack()" id="parqueFernandoLink"></div>
+            <div onclick="getParamReserve('medvedtaiga')" onmouseover="changeReserveImg('medvedtaiga')"
+                onmouseout="setReserveImgBack()" id="medvedTaigaLink"></div>
+            <div onclick="getParamReserve('cuatrocollinas')" onmouseover="changeReserveImg('cuatrocollinas')"
+                onmouseout="setReserveImgBack()" id="cuatroColinasLink"></div>
+            <div onclick="getParamReserve('yurhongasavanne')" onmouseover="changeReserveImg('yurhongasavanne')"
+                onmouseout="setReserveImgBack()" id="yurhongaSavanneLink"></div>
+            <div onclick="getParamReserve('teawaroa')" onmouseover="changeReserveImg('teawaroa')"
+                onmouseout="setReserveImgBack()" id="teAwaroaLink"></div>
+            <div onclick="getParamReserve('revontulicoast')" onmouseover="changeReserveImg('revontulicoast')"
+                onmouseout="setReserveImgBack()" id="revontuliCoastLink"></div>
         </div>
     </header>
 </body>

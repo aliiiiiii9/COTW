@@ -12,7 +12,7 @@ let reserves = {
             "Roosevelt-Wapiti",
             "Elch"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/laytonlake_card.jpg"
     },
     "hirschfelden": {
         "name": "Hirschfelden",
@@ -27,7 +27,7 @@ let reserves = {
             "Rothirsch",
             "Wisent"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/hirschfelden_card.jpg"
     },
     "medvedtaiga": {
         "name": "Medved-Taiga",
@@ -41,7 +41,7 @@ let reserves = {
             "Braunbär",
             "Elch"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/medvedtaiga_card.jpg"
     },
     "yurhongasavanne": {
         "name": "Yurhonga Savanne",
@@ -57,7 +57,7 @@ let reserves = {
             "Kaffernbüffel",
             "Löwe"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/yurhongasavanne_card.jpg"
     },
     "parquefernando": {
         "name": "Parque Fernando",
@@ -71,7 +71,7 @@ let reserves = {
             "Rothirsch",
             "Wasserbüffel"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/parquefernando_card.jpg"
     },
     "yukonvalley": {
         "name": "Yukon Valley",
@@ -85,10 +85,10 @@ let reserves = {
             "RothirschElch",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/yukonvalley_card.jpg"
     },
-    "cuatrocolinas": {
-        "name": "Cuatro Colinas",
+    "cuatrocollinas": {
+        "name": "Cuatro Collinas",
         "animals": [
             "Ringfasan",
             "Feldhase",
@@ -102,7 +102,7 @@ let reserves = {
             "Iberischer Wolf",
             "Rothirsch"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/cuatrocollinas_card.jpg"
     },
     "silverridgepeaks": {
         "name": "Silver Ridge Peaks",
@@ -117,7 +117,7 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/silverridge_card.jpg"
     },
     "teawaroa": {
         "name": "Te Awaroa National Park",
@@ -132,7 +132,7 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/teawaroa_card.jpg"
     },
     "ranchodelarroyo": {
         "name": "Rancho del Arroyo",
@@ -147,7 +147,7 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/ranchodelarroyo_card.jpg"
     },
     "mississippi": {
         "name": "Mississippi",
@@ -162,7 +162,7 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/mississippi_card.jpg"
     },
     "revontulicoast": {
         "name": "Revontuli Coast",
@@ -177,7 +177,7 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/revontulicoast_card.jpg"
     },
     "newengland": {
         "name": "New England",
@@ -192,6 +192,6 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserveCards/image.jpg"
+        "cardLink" : "../img/reserves/newengland_card.jpg"
     },
 }

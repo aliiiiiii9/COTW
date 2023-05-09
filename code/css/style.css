@@ -162,6 +162,15 @@ header {
 #reserveImage{
     width: 100vw;
 }
+#reserve_box{
+    text-align: center;
+}
+#reserve_card{
+    width: 50vw;
+}
+
+
+
 #laytonLakeLink{
     position: absolute;
     top: 112%;
@@ -171,10 +180,7 @@ header {
     border-radius: 100%;
     transition: all 0.5s;
 }
-#laytonLakeLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
-}
+
 #hirschfeldenLink{
     position: absolute;
     top: 113%;
@@ -182,10 +188,6 @@ header {
     width: 8vw;
     height: 18vh;
     border-radius: 100%;
-    transition: all 0.5s;
-}
-#hirschfeldenLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
     transition: all 0.5s;
 }
 #yukonValleyLink{
@@ -198,10 +200,6 @@ header {
     transition: all 0.5s;
 
 }
-#yukonValleyLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
-}
 #newEnglandLink{
     position: absolute;
     top: 120%;
@@ -211,10 +209,6 @@ header {
     border-radius: 100%;
     transition: all 0.5s;
 
-}
-#newEnglandLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
 }
 #silverRidgePeaksLink{
     position: absolute;
@@ -226,10 +220,6 @@ header {
     transition: all 0.5s;
 
 }
-#silverRidgePeaksLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
-}
 #mississippiLink{
     position: absolute;
     top: 125%;
@@ -239,10 +229,6 @@ header {
     border-radius: 100%;
     transition: all 0.5s;
 
-}
-#mississippiLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
 }
 #ranchoDelArroyoLink{
     position: absolute;
@@ -254,10 +240,6 @@ header {
     transition: all 0.5s;
 
 }
-#ranchoDelArroyoLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
-}
 #parqueFernandoLink{
     position: absolute;
     top: 157.2%;
@@ -267,10 +249,6 @@ header {
     border-radius: 100%;
     transition: all 0.5s;
 
-}
-#parqueFernandoLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
 }
 #medvedTaigaLink{
     position: absolute;
@@ -282,10 +260,6 @@ header {
     transition: all 0.5s;
 
 }
-#medvedTaigaLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
-}
 #cuatroColinasLink{
     position: absolute;
     top: 123%;
@@ -295,10 +269,6 @@ header {
     border-radius: 100%;
     transition: all 0.5s;
 
-}
-#cuatroColinasLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
 }
 #yurhongaSavanneLink{
     position: absolute;
@@ -310,10 +280,6 @@ header {
     transition: all 0.5s;
 
 }
-#yurhongaSavanneLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
-}
 #teAwaroaLink{
     position: absolute;
     top: 179%;
@@ -324,10 +290,6 @@ header {
     transition: all 0.5s;
 
 }
-#teAwaroaLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
-}
 #revontuliCoastLink{
     position: absolute;
     top: 99%;
@@ -337,10 +299,6 @@ header {
     border-radius: 100%;
     transition: all 0.5s;
 
-}
-#revontuliCoastLink:hover{
-    background-color: rgba(255, 102, 0, 0.22);
-    transition: all 0.5s;
 }
 /*
  *  DLCs

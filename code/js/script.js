@@ -158,17 +158,32 @@ function getParamReserve(value) {
 function setParam(reserve) {
     window.open(`./reserve.html?=${reserve}`, "_self")
 }
-
-function getParamToGenerate(){
+function changeReserveImg(reserve) {
+    document.getElementById('reserve_link_img').innerHTML = `<img id="reserveImage" src='../img/reserves/${reserve}.jpg' alt="">`
+}
+function setReserveImgBack() {
+    document.getElementById('reserve_link_img').innerHTML = `<img id="reserveImage" src='../img/reserves/link_card.jpg' alt="">`
+}
+function getParamToGenerate() {
     let reserve = "" + new URLSearchParams(window.location.search).get('') + ""
     let s = `reserves.${reserve}`
     let final_reserve = eval(s)
     // HEADER TEXT
     document.getElementById('headerText').innerHTML = final_reserve.name
-
-    for (let i = 0; i < final_reserve.animals.length; i++) {
-        reserve_box.innerHTML += `<p>${final_reserve.animals[i]}</p>`
-    }
     
+    // GENERATION
+    let temp_html = ""
+
+    temp_html += `<img id="reserve_card" src="${final_reserve.cardLink}" alt="Karte">`
+    temp_html += "<div id='animals'>"
+    temp_html += "<h2>Tiere</h2>"
+    for (let i = 0; i < final_reserve.animals.length; i++) {
+        temp_html += `<p>${final_reserve.animals[i]}</p>`
+    }
+    temp_html += "</div>"
+
+    reserve_box.innerHTML = temp_html
+
+
 
 }
