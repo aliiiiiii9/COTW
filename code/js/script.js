@@ -6,7 +6,12 @@ let boxSights = document.getElementById('boxSights')
 let dlcBox = document.getElementById('dlc_box')
 let reserve_box = document.getElementById('reserve_box')
 
-
+function randomBannerImage(){
+    const randomNum = Math.floor(Math.random() * 21) + 1;
+    document.getElementById('banner').innerHTML = `        
+        <img src='../img/random/${randomNum}.jpg' alt="Background Image" id="bannerImage">
+    `
+}
 function genWeapons() {
     for (let i = 0; i < weapons.pistols.length; i++) {
         pistolBox.innerHTML += `
@@ -170,7 +175,7 @@ function getParamToGenerate() {
     let final_reserve = eval(s)
     // HEADER TEXT
     document.getElementById('headerText').innerHTML = final_reserve.name
-    
+
     // GENERATION
     let temp_html = ""
 
@@ -183,7 +188,8 @@ function getParamToGenerate() {
     temp_html += "</div>"
 
     reserve_box.innerHTML = temp_html
-
-
+    document.getElementById('banner').innerHTML = `
+        <img src='${final_reserve.background}' alt="Background Image" id="bannerImage">
+    `
 
 }

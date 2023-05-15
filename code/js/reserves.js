@@ -12,7 +12,8 @@ let reserves = {
             "Roosevelt-Wapiti",
             "Elch"
         ],
-        "cardLink" : "../img/reserves/laytonlake_card.jpg"
+        "cardLink" : "../img/reserves/laytonlake_card.jpg",
+        "background" : "../img/Backgrounds/13.jpg"
     },
     "hirschfelden": {
         "name": "Hirschfelden",
@@ -27,7 +28,8 @@ let reserves = {
             "Rothirsch",
             "Wisent"
         ],
-        "cardLink" : "../img/reserves/hirschfelden_card.jpg"
+        "cardLink" : "../img/reserves/hirschfelden_card.jpg",
+        "background" : "../img/Backgrounds/27.jpg"
     },
     "medvedtaiga": {
         "name": "Medved-Taiga",
@@ -41,7 +43,8 @@ let reserves = {
             "Braunbär",
             "Elch"
         ],
-        "cardLink" : "../img/reserves/medvedtaiga_card.jpg"
+        "cardLink" : "../img/reserves/medvedtaiga_card.jpg",
+        "background" : "../img/Backgrounds/10.jpg"
     },
     "yurhongasavanne": {
         "name": "Yurhonga Savanne",
@@ -57,7 +60,8 @@ let reserves = {
             "Kaffernbüffel",
             "Löwe"
         ],
-        "cardLink" : "../img/reserves/yurhongasavanne_card.jpg"
+        "cardLink" : "../img/reserves/yurhongasavanne_card.jpg",
+        "background" : "../img/Backgrounds/38.jpg"
     },
     "parquefernando": {
         "name": "Parque Fernando",
@@ -71,7 +75,8 @@ let reserves = {
             "Rothirsch",
             "Wasserbüffel"
         ],
-        "cardLink" : "../img/reserves/parquefernando_card.jpg"
+        "cardLink" : "../img/reserves/parquefernando_card.jpg",
+        "background" : "../img/Backgrounds/34.jpg"
     },
     "yukonvalley": {
         "name": "Yukon Valley",
@@ -85,7 +90,8 @@ let reserves = {
             "RothirschElch",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserves/yukonvalley_card.jpg"
+        "cardLink" : "../img/reserves/yukonvalley_card.jpg",
+        "background" : "../img/Backgrounds/26.jpg"
     },
     "cuatrocollinas": {
         "name": "Cuatro Collinas",
@@ -102,7 +108,8 @@ let reserves = {
             "Iberischer Wolf",
             "Rothirsch"
         ],
-        "cardLink" : "../img/reserves/cuatrocollinas_card.jpg"
+        "cardLink" : "../img/reserves/cuatrocollinas_card.jpg",
+        "background" : "../img/Backgrounds/35.jpg"
     },
     "silverridgepeaks": {
         "name": "Silver Ridge Peaks",
@@ -117,7 +124,8 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserves/silverridge_card.jpg"
+        "cardLink" : "../img/reserves/silverridge_card.jpg",
+        "background" : "../img/Backgrounds/31.jpg"
     },
     "teawaroa": {
         "name": "Te Awaroa National Park",
@@ -132,7 +140,8 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserves/teawaroa_card.jpg"
+        "cardLink" : "../img/reserves/teawaroa_card.jpg",
+        "background" : "../img/Backgrounds/41.jpg"
     },
     "ranchodelarroyo": {
         "name": "Rancho del Arroyo",
@@ -147,7 +156,8 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserves/ranchodelarroyo_card.jpg"
+        "cardLink" : "../img/reserves/ranchodelarroyo_card.jpg",
+        "background" : "../img/Backgrounds/33.jpg"
     },
     "mississippi": {
         "name": "Mississippi",
@@ -162,7 +172,8 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserves/mississippi_card.jpg"
+        "cardLink" : "../img/reserves/mississippi_card.jpg",
+        "background" : "../img/Backgrounds/30.jpg"
     },
     "revontulicoast": {
         "name": "Revontuli Coast",
@@ -177,7 +188,8 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserves/revontulicoast_card.jpg"
+        "cardLink" : "../img/reserves/revontulicoast_card.jpg",
+        "background" : "../img/Backgrounds/37.jpg"
     },
     "newengland": {
         "name": "New England",
@@ -192,6 +204,7 @@ let reserves = {
             "Rocky Mountain Wapiti",
             "Präriebison"
         ],
-        "cardLink" : "../img/reserves/newengland_card.jpg"
+        "cardLink" : "../img/reserves/newengland_card.jpg",
+        "background" : "../img/Backgrounds/28.jpg"
     },
 }

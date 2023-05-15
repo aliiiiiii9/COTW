@@ -1,47 +1,60 @@
 let surface = document.getElementById('surface');
-
 let playerName
-let duckGenerationDiv = document.getElementById('ducks')
+let duckGenerationDiv = document.getElementById('duckGenBox')
 let duckPosY
 let duckPosX = -150
-let duckIdCount = 1
+let duckMoveCount = -1
 
 function setNameAndStart() {
-    if (document.getElementById('input_name').value != "" ) {
+    if (document.getElementById('input_name').value != " " && document.getElementById('input_name').value != "") {
         playerName = document.getElementById('input_name').value
         sessionStorage['game'] = JSON.stringify(playerName)
         window.open("./game_main.html", "_self")
     }
-    else{
-        document.getElementById('message').style.color = "rgb(0,0,0)"
+    else {
+        document.getElementById('message').style.color = "rgb(145, 23, 23)"
     }
 }
 function startGame() {
+    generateDuck()
     gameLoop()
 }
 async function gameLoop() {
     moveDuck()
 
-    generateDuck()
-    setTimeout(gameLoop, 1000)
+    setTimeout(gameLoop, 200)
 }
 async function generateDuck() {
     let random = Math.floor(Math.random() * surface.clientHeight)
-    duckGenerationDiv.innerHTML += `<img onclick="killDuck(this)" class="duck" id="duck${duckIdCount}" src="../img/game/flying_duck.gif" alt="flying_duck"></img>`
-    document.getElementById(`duck${duckIdCount}`).style.top = random + "px"
-    document.getElementById(`duck${duckIdCount}`).style.left = -150 + "px"
-    duckIdCount++
+
+    duckGenerationDiv.innerHTML += `
+        <img onclick="killDuck(this)" id="duck" src="../img/game/flying_duck.gif" alt="flying_duck">
+    `
+    document.getElementById(`duck`).style.top = random + "px"
+    document.getElementById(`duck`).style.left = -150 + "px"
 }
 async function moveDuck() {
-    let tempDuckPosX = 0;
-    for(let i = 1; i <= duckIdCount;i++){
-        if(i == 1){
-            tempDuckPosX = tempDuckPosX + (20 * i)
-        }
-        document.getElementById(`duck${i}`).style.left = tempDuckPosX + "px"
+    if(duckPosCor()){
+        let tempDuckPosX = 0;
+        duckMoveCount++
+        tempDuckPosX = tempDuckPosX + (40 * duckMoveCount)
+        document.getElementById(`duck`).style.left = tempDuckPosX + "px"
     }
-    
+    else{
+        document.getElementById('duck').remove
+    }
 }
 async function killDuck(elem) {
     elem.remove()
+    duckMoveCount= -20
+    generateDuck()
+}
+function duckPosCor(){
+    let duckPosLeft = document.getElementById('duck').style.left.substring(1,document.getElementById('duck').style.left.length-1)
+    if(duckPosLeft > window.innerWidth){
+        return false
+    }
+    else{
+        return true
+    }
 }

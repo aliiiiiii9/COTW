@@ -4,4 +4,12 @@
 }
 #message{
     color: rgba(0, 0, 0, 0);
+    text-align: center;
+}
+#explanation{
+    text-align: center;
+}
+#duck{
+    width: 10vw;
+    position: relative;
 }
