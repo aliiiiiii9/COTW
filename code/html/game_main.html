@@ -5,18 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Hauptseite</title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/game.css">
+
     <script src="../js/game.js" defer></script>
 </head>
 <body>
-    <h1>Jagdspiel</h1>
+    <header>
+        <div id="stickyHeader">
+            <h1 id="headerText">Jagdspiel</h1>
+        </div>
+    </header>
 
     <div id="surface">
         <!--<img class="duck" src="../img/game/flying_duck.gif" alt="flying_duck">-->
-        <div id="duckGenBox"></div>
+        <div id="duckBox"></div>
+        <div id="weapon">
+            <img src="" alt="">
+        </div>
     </div>
     <div>
-        <button onclick="startGame()">Spiel Starten</button>
+        <button id="startButton" onclick="startGame()">Spiel Starten</button>
     </div>
 </body>
 </html>
