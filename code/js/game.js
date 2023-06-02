@@ -74,6 +74,18 @@ let surfaceHeight = surface.offsetHeight - surface.offsetTop
 let multiplier = 0;
 let weapon = document.getElementById('weapon')
 
+let munition = 6
+let points = 0
+
+const mousePosText = document.getElementById('surface');
+let mousePos = { x: undefined, y: undefined };
+
+window.addEventListener('mousemove', (event) => {
+    mousePos = { x: event.clientX, y: event.clientY };
+    console.log(`(${mousePos.x}, ${mousePos.y})`);
+});
+
+
 
 function setNameAndStart() {
     if (document.getElementById('input_name').value != " " && document.getElementById('input_name').value != "") {
@@ -87,12 +99,22 @@ function setNameAndStart() {
 }
 
 function startGame() {
+    
     startButton.remove()
+    genMunition()
     generateDuck()
+    document.getElementById('weaponImg').style.opacity = "1"
     gameLoop()
 }
 async function gameLoop() {
-
+    
+    if (mousePos.x < window.innerWidth / 2) {
+        document.getElementById('weapon').style.transition = "all 0.5s"
+        document.getElementById('weapon').style.transform = "scaleX(1)"
+    } else {
+        document.getElementById('weapon').style.transition = "all 0.5s"
+        document.getElementById('weapon').style.transform = "scaleX(-1)"
+    }
     moveDuck()
     multiplier++
 
@@ -106,6 +128,9 @@ async function generateDuck() {
         <img id="duck" onclick="shoot()" src="../img/game/flying_duck.gif" alt="Flying Duck">
     `
     document.getElementById('duck').style.top = random + "px"
+
+
+
 }
 async function moveDuck() {
 
@@ -115,7 +140,7 @@ async function moveDuck() {
 
     } else {
         console.log("ELSE");
-        
+
         multiplier = 0
         resetDuck()
     }
@@ -123,7 +148,50 @@ async function moveDuck() {
 async function resetDuck() {
     let random = Math.floor(Math.random() * surfaceHeight)
     duckBox.innerHTML = `
-        <img id="duck" onclick="shoot()" src="../img/game/flying_duck.gif" alt="Flying Duck">
+        <img id="duck" onclick="shoot(this)" src="../img/game/flying_duck.gif" alt="Flying Duck">
     `
     document.getElementById('duck').style.top = random + "px"
+}
+
+
+async function shoot() {
+    if (munition > 0) {
+        munition--
+        document.getElementById('duck').remove()
+        points += 1
+        document.getElementById('points').innerHTML = `<p>Punkte: ${points}</p>`
+        multiplier = 0
+        genMunition()
+        generateDuck()
+    }
+    if (munition == 0) {
+        document.getElementById('reload').innerHTML = `<button id="reloadButton" onclick="reload()">Nachladen</button>`
+    }
+}
+async function reload() {
+    munition = 6
+    genMunition()
+    document.getElementById('reload').innerHTML = ""
+}
+async function genMunition() {
+    document.getElementById('munition').innerHTML = ""
+    for (let i = 1; i <= munition; i++) {
+        document.getElementById('munition').innerHTML += `<img src="../img/game/bullet.png" alt="patrone">`
+
+    }
+}
+function safeScore() {
+    let playerName = JSON.parse(sessionStorage['game'])
+    let playerScore = points
+    localStorage['game']
+    let person = {
+        'name': playerName,
+        'score': playerScore
+    }
+    let players = []
+    if ((localStorage['game'])) {
+        players = JSON.parse(localStorage['game'])
+    }
+    players.push(person)
+    localStorage['game'] = JSON.stringify(players)
 }

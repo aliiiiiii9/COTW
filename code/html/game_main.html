@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,22 +10,29 @@
 
     <script src="../js/game.js" defer></script>
 </head>
-<body>
+<body id="body">
     <header>
         <div id="stickyHeader">
             <h1 id="headerText">Jagdspiel</h1>
         </div>
     </header>
 
-    <div id="surface">
+    <div id="surface" class="custom-cursor">
         <!--<img class="duck" src="../img/game/flying_duck.gif" alt="flying_duck">-->
         <div id="duckBox"></div>
         <div id="weapon">
-            <img src="" alt="">
+            <img id="weaponImg" src="../img/game/gun.png" alt="waffe">
         </div>
+        
+    </div>
+    <div id="munition"></div>
+    <div id="points"><p>Punkte: 0</p></div>
+    <div id="reload">
+        
     </div>
     <div>
         <button id="startButton" onclick="startGame()">Spiel Starten</button>
     </div>
+    <br><br><br><br>
 </body>
 </html>
