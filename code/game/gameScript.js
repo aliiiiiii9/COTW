@@ -280,10 +280,7 @@ function animatePlayer() {
     let distanceRight = d1OffsetLeft - d2Left;
 
     return !(tolerance < distanceTop || tolerance < distanceBottom || tolerance < distanceLeft || tolerance < distanceRight);
-};
-
-
-
+}
 
 function genItems() {
     let randomTop = Math.floor(Math.random() * surface.clientHeight)

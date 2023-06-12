@@ -76,13 +76,13 @@ let weapon = document.getElementById('weapon')
 
 let munition = 6
 let points = 0
-
+let time = 60
 const mousePosText = document.getElementById('surface');
 let mousePos = { x: undefined, y: undefined };
 
 window.addEventListener('mousemove', (event) => {
     mousePos = { x: event.clientX, y: event.clientY };
-    console.log(`(${mousePos.x}, ${mousePos.y})`);
+
 });
 
 
@@ -99,7 +99,7 @@ function setNameAndStart() {
 }
 
 function startGame() {
-    
+    timer()
     startButton.remove()
     genMunition()
     generateDuck()
@@ -107,7 +107,7 @@ function startGame() {
     gameLoop()
 }
 async function gameLoop() {
-    
+
     if (mousePos.x < window.innerWidth / 2) {
         document.getElementById('weapon').style.transition = "all 0.5s"
         document.getElementById('weapon').style.transform = "scaleX(1)"
@@ -194,4 +194,48 @@ function safeScore() {
     }
     players.push(person)
     localStorage['game'] = JSON.stringify(players)
+
+    window.open("./game_scoreboard.html", "_self")
+}
+
+async function timer() {
+    time--
+    if (time == 0) {
+        timerBox.innerHTML = `Sec: ${parseInt(time)}`
+        duckBox.remove()
+        weapon.remove()
+        
+              
+        document.getElementById('reload').innerHTML += `<button id="reloadButton" onclick="safeScore()">Bestenliste</button>`
+
+    }
+    else {
+        timerBox.innerHTML = `Sec: ${parseInt(time)}`
+        setTimeout(timer, 1000)
+    }
+}
+function printLeaderbord() {
+    let players = JSON.parse(localStorage['game']);
+    console.log(players);
+    players.sort((b, a) => a.score - b.score);
+    // HTML Ausgabe generieren
+    for (let i = 0; i < players.length; i++) {
+        
+        if (players[i].name == JSON.parse(sessionStorage['game'])) {
+            table.innerHTML += `
+            <tr>
+                <td class="text-left" style="color: red;">${players[i].name}</td>
+                <td class="text-left" style="color: red;">${players[i].score}</td>
+            </tr>
+        `
+        }
+        else {
+            table.innerHTML += `
+            <tr>
+                <td class="text-left">${players[i].name}</td>
+                <td class="text-left">${players[i].score}</td>
+            </tr>
+            `
+        }
+    }
 }

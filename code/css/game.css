@@ -53,20 +53,20 @@ header {
     grid-template-columns: auto;
     align-items: center;
     text-align: center;
-    left: 90%;
-    top: 90%;
-    width: 10%;
-    height: 10%;
+    left: 90vw;
+    top: 90vh;
+    width: 10vw;
+    height: 10vh;
 }
 
 #munition {
     position: absolute;
-    left: 92%;
-    top: 40%;
+    left: 92vw;
+    top: 40vh;
 }
 
 #munition img {
-    width: 80%;
+    width: 80vw;
     margin-left: auto;
 
 }
@@ -75,18 +75,216 @@ header {
     cursor: url('../img/game/cursor.png');
     z-index: 10;
 }
-#weapon{
+
+#weapon {
     display: flex;
     pointer-events: none;
     transform: all 0.2s;
     text-align: center;
     height: 70vh;
     align-items: baseline;
-} 
-#weaponImg{
+}
+
+#weaponImg {
     width: 20vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     opacity: 0;
+}
+
+#timerBox {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+    left: 0vw;
+    top: 90vh;
+    width: 10vw;
+    height: 10vh;
+}
+
+#startButton {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+    left: 45vw;
+    top: 95vh;
+    width: 10vw;
+    height: 5vh;
+
+    color: var(--timberwolf);
+    background-color: #22271E;
+    transition: all 0.2s;
+}
+
+#startButton:hover {
+    background-color: #2a3025;
+    box-shadow: #2a3025 0.5vw 1vh 1vw;
+    transition: all 0.2s;
+}
+
+#reloadButton {
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+    left: 45vw;
+    top: 95vh;
+    width: 10vw;
+    height: 5vh;
+
+    color: var(--timberwolf);
+    background-color: #22271E;
+    transition: all 0.2s;
+}
+
+#reloadButton:hover {
+    background-color: #2a3025;
+    box-shadow: #2a3025 0.5vw 1vh 1vw;
+    transition: all 0.2s;
+}
+
+/*
+#scoreboardLink{
+    
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    text-align: center;
+    left: 45vw;
+    top: 95vh;
+    width: 10vw;
+    height: 5vh;
+    color: var(--timberwolf);
+    background-color: #22271E;
+    transition: all 0.2s;
+}
+#scoreboardLink:hover{
+    background-color: #2a3025;
+    box-shadow: #2a3025 0.5vw 1vh 1vw;
+    transition: all 0.2s;
+}*/
+
+
+
+
+/*** Table Styles **/
+
+.table-fill {
+    background: white;
+    border-radius: 3px;
+    border-collapse: collapse;
+    height: 320px;
+    margin: auto;
+    max-width: 600px;
+    padding: 5px;
+    width: 100vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+}
+
+th {
+    color: var( --timberwolf);
+    background: rgb(169, 145, 127);
+    border-bottom: 4px solid var(--ferngreen);
+    border-right: 1px solid var(--ferngreen);
+    font-size: 23px;
+    font-weight: 100;
+    padding: 24px;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+th:first-child {
+    border-top-left-radius: 3px;
+}
+
+th:last-child {
+    border-top-right-radius: 3px;
+    border-right: none;
+}
+
+tr {
+    border-top: 1px solid var(--ferngreen);
+    border-bottom: 1px solid var(--ferngreen);
+    color: var(--chamoise);
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+
+tr:hover td {
+    background: var( --sage);
+    color: #FFFFFF;
+    border-top: 1px solid var(--chamoise);
+}
+
+tr:first-child {
+    border-top: none;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:nth-child(odd) td {
+    background: var( --timberwolf);
+}
+
+tr:nth-child(odd):hover td {
+    background: var( --sage);
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 3px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+td {
+    background: #FFFFFF;
+    padding: 20px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 18px;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    border-right: 1px solid var(--ferngreen);
+}
+
+td:last-child {
+    border-right: 0px;
+}
+
+th.text-left {
+    text-align: left;
+}
+
+th.text-center {
+    text-align: center;
+}
+
+th.text-right {
+    text-align: right;
+}
+
+td.text-left {
+    text-align: left;
+}
+
+td.text-center {
+    text-align: center;
+}
+
+td.text-right {
+    text-align: right;
 }
