@@ -8,6 +8,8 @@
     <title>Bildergallerie</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/script.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+
     <script>
         window.onload = function () {
             console.log('Dokument geladen')
@@ -17,14 +19,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="headline">
         <div id="banner">
             <img src="../img/Backgrounds/13.jpg" alt="Background_1" id="bannerImage">
         </div>
         <div id="stickyHeader">
-            <h1 id="headerText">Bildergallerie</h1>
-            <a href="../html/index.html"><img src="../img/home.png" alt="" id="headerHome"></a>
-            <img src="../img/logo.jpg" alt="logo" id="headerImage">
+            <h1 id="headerText" class="slide-in-left">Bildergallerie</h1>
+            <a href="../html/index.html"><img class="slide-in-right" src="../img/home.png" alt="" id="headerHome"></a>
+            <img src="../img/logo.jpg" class="slide-in-right" alt="logo" id="headerImage">
         </div>
     </header>
 

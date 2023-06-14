@@ -6,6 +6,9 @@ let boxSights = document.getElementById('boxSights')
 let dlcBox = document.getElementById('dlc_box')
 let reserve_box = document.getElementById('reserve_box')
 
+ScrollReveal().reveal('.headline');
+
+
 function randomBannerImage(){
     const randomNum = Math.floor(Math.random() * 21) + 1;
     document.getElementById('banner').innerHTML = `        
