@@ -45,6 +45,8 @@ header {
     height: 80vh;
     margin-left: auto;
     margin-right: auto;
+
+    cursor: url('../img/game/aim.png'), auto;
 }
 
 #points {
@@ -66,14 +68,8 @@ header {
 }
 
 #munition img {
-    width: 80vw;
+    width: 6vw;
     margin-left: auto;
-
-}
-
-.custom-cursor {
-    cursor: url('../img/game/cursor.png');
-    z-index: 10;
 }
 
 #weapon {

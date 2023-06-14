@@ -164,10 +164,10 @@ function setParam(reserve) {
     window.open(`./reserve.html?=${reserve}`, "_self")
 }
 function changeReserveImg(reserve) {
-    document.getElementById('reserve_link_img').innerHTML = `<img id="reserveImage" src='../img/reserves/${reserve}.jpg' alt="">`
+    document.getElementById(reserve).style.zIndex = "3"
 }
-function setReserveImgBack() {
-    document.getElementById('reserve_link_img').innerHTML = `<img id="reserveImage" src='../img/reserves/link_card.jpg' alt="">`
+function setReserveImgBack(reserve) {    
+    document.getElementById(reserve).style.zIndex = "1"
 }
 function getParamToGenerate() {
     let reserve = "" + new URLSearchParams(window.location.search).get('') + ""

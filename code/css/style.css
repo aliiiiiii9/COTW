@@ -169,7 +169,114 @@ header {
 
 
 #reserveImage {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
     width: 100vw;
+    z-index: 2;
+}
+
+#hirschfelden {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#laytonlake {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#yukonvalley {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#newengland {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#silverridge {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#mississippi {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#ranchodelarroyo {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#parquefernando {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#medvedtaiga {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#cuatroCollinas {
+    position: relative;
+    width: 100vw;
+    opacity: 0;
+    z-index: 1;
+}
+
+#yurhongasavanne {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#teawaroa {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
+}
+
+#revontulicoast {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
+    width: 100vw;
+    z-index: 1;
 }
 
 #reserve_box {
@@ -180,8 +287,6 @@ header {
     width: 50vw;
 }
 
-
-
 #laytonLakeLink {
     position: absolute;
     top: 112%;
@@ -190,6 +295,7 @@ header {
     height: 17vh;
     border-radius: 100%;
     transition: all 0.5s;
+    z-index: 3;
 }
 
 #hirschfeldenLink {
@@ -200,6 +306,7 @@ header {
     height: 18vh;
     border-radius: 100%;
     transition: all 0.5s;
+    z-index: 3;
 }
 
 #yukonValleyLink {
@@ -210,6 +317,7 @@ header {
     height: 19vh;
     border-radius: 100%;
     transition: all 0.5s;
+    z-index: 3;
 
 }
 
@@ -221,6 +329,7 @@ header {
     height: 13vh;
     border-radius: 100%;
     transition: all 0.5s;
+    z-index: 3;
 
 }
 
@@ -232,7 +341,7 @@ header {
     height: 14.2vh;
     border-radius: 100%;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
 #mississippiLink {
@@ -243,7 +352,7 @@ header {
     height: 20vh;
     border-radius: 100%;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
 #ranchoDelArroyoLink {
@@ -254,7 +363,7 @@ header {
     height: 14.2vh;
     border-radius: 100%;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
 #parqueFernandoLink {
@@ -265,6 +374,7 @@ header {
     height: 18vh;
     border-radius: 100%;
     transition: all 0.5s;
+    z-index: 3;
 
 }
 
@@ -276,10 +386,10 @@ header {
     height: 19vh;
     border-radius: 100%;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
-#cuatroColinasLink {
+#cuatroCollinasLink {
     position: absolute;
     top: 123%;
     left: 45%;
@@ -287,7 +397,7 @@ header {
     height: 13vh;
     border-radius: 100%;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
 #yurhongaSavanneLink {
@@ -298,7 +408,7 @@ header {
     height: 18vh;
     border-radius: 100%;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
 #teAwaroaLink {
@@ -309,7 +419,7 @@ header {
     height: 18vh;
     border-radius: 100%;
     transition: all 0.5s;
-
+    z-index: 3;
 }
 
 #revontuliCoastLink {
@@ -320,6 +430,7 @@ header {
     height: 17vh;
     border-radius: 100%;
     transition: all 0.5s;
+    z-index: 3;
 
 }
 
@@ -343,7 +454,7 @@ header {
 .dlcName {
     margin: auto;
     padding: 0;
-    font-size: 3em;
+    font-size: 3vw;
 }
 
 .dlcImg {
@@ -367,6 +478,7 @@ header {
 /*
  * RESPONSIVE DESIGN 
  */
+
 
 /* GALLERY */
 @media (max-width: 600px) {
@@ -433,11 +545,12 @@ header {
         align-items: center;
         transition: all 0.4s;
     }
-    .weaponCard{
+
+    .weaponCard {
         width: 40vw;
     }
 
-    .weaponImg{
+    .weaponImg {
         width: 35vw;
     }
 }
@@ -451,10 +564,12 @@ header {
         align-items: center;
         transition: all 0.4s;
     }
-    .weaponCard{
+
+    .weaponCard {
         width: 25vw;
     }
-    .weaponImg{
+
+    .weaponImg {
         width: 22vw;
     }
 }
@@ -468,10 +583,12 @@ header {
         align-items: center;
         transition: all 0.4s;
     }
-    .weaponCard{
+
+    .weaponCard {
         width: 15vw;
     }
-    .weaponImg{
+
+    .weaponImg {
         width: 12vw;
     }
 }
