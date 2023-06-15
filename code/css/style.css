@@ -248,10 +248,11 @@ header {
     z-index: 1;
 }
 
-#cuatroCollinas {
-    position: relative;
+#cuatrocollinas {
+    position: absolute;
+    top: 72.5vh;
+    left: 0vw;
     width: 100vw;
-    opacity: 0;
     z-index: 1;
 }
 
@@ -456,7 +457,9 @@ header {
     padding: 0;
     font-size: 3vw;
 }
-
+.dlcText{
+    font-size: 1vw;
+}
 .dlcImg {
     width: 25vw;
     margin-left: auto;
@@ -474,6 +477,7 @@ header {
     margin-right: auto;
     margin-bottom: 5vh;
 }
+
 
 /*
  * RESPONSIVE DESIGN 
@@ -590,6 +594,56 @@ header {
 
     .weaponImg {
         width: 12vw;
+    }
+}
+
+/* DLC */
+@media (min-width: 300px) {
+    .dlcGrid1 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5%;
+        margin-top: 5vh;
+    }
+    
+    .dlcGrid2 {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 5%;
+        margin-top: 5vh;
+    }
+    .dlcImg {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.2s;
+    }
+    .dlcText{
+        font-size: 2vw;
+    }
+}
+@media (min-width: 600px) {
+    .dlcGrid1 {
+        display: grid;
+        grid-template-columns: 25% 70%;
+        grid-gap: 5%;
+        margin-top: 5vh;
+    }
+    
+    .dlcGrid2 {
+        display: grid;
+        grid-template-columns: 70% 25%;
+        grid-gap: 5%;
+        margin-top: 5vh;
+    }
+    .dlcImg {
+        width: 25vw;
+        margin-left: auto;
+        margin-right: auto;
+        transition: all 0.2s;
+    }
+    .dlcText{
+        font-size: 1vw;
     }
 }
 

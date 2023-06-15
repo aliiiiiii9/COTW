@@ -96,6 +96,4 @@ let dlcs = {
             "image": "../img/dlcs/newEnglandScoutCosmetic.jpg"
         }
     ]
-    
-    
 }
